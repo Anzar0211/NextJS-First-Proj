@@ -19,12 +19,13 @@ export default function RecipeList({ recipeList }) {
             ? recipeList.map((recipe) => (
                 <Link href={`/recipe-list/${recipe.id}`}>
                   <Card>
-                    <CardContent className="bg-white rounded-md overflow-hidden shadow-md cursor-pointer">
+                    <CardContent className="bg-white rounded-md overflow-hidden shadow-xl
+                    hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
                       <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
                         <img
                           src={recipe.image}
                           alt={recipe.name}
-                          className="h-full w-full object-cover object-top"
+                          className="h-full w-full object-cover object-top transition-transform duration-300 hover:scale-110 hover:brightness-110"
                         />
                       </div>
 
